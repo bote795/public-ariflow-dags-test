@@ -3,7 +3,7 @@
 rm -rf images
 mkdir images
 cd images
-for i in {1..200}
+for i in {1..600}
 do
 	#need 400 files
 	cp ./../baseFiles/test.jpeg "test${i}.jpeg"
