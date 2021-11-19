@@ -1,7 +1,8 @@
 #!/bin/bash
 # make 2gb worth of files to push to github
-cd files
-for i in {1..20}
+cd images
+for i in {1..400}
 do
-	dd if=/dev/zero of="temp_100mbn_file${i}" bs=1m count=100
+	#need 400 files
+	cp test.jpeg "test${i}.jpeg"
 done
