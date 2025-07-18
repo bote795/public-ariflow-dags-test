@@ -8,6 +8,7 @@ from airflow.triggers.testing import SuccessTrigger
 # https://github.com/apache/airflow/issues/18146#issuecomment-918519695
 
 
+
 class RetryOperator(BaseOperator):
     def execute(self, context):
         ti = context["ti"]
